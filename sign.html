@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loging</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(image/pexels-pixabay-315755.jpg);
+       background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        padding: 20px;
+        float: left;
+    }
+    
+   
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{   
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#login{
+    
+    width: 500px;
+}
+#signup{
+    
+    width: 500px;
+}
+label{
+    font-size: larger;
+}
+input[type="text"],[type="tel"],[type="password"],[type="email"]{
+    width: 80%;
+    padding: 12px;
+    resize: vertical;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color:blueviolet;
+    color: white;
+    padding: 10px 12px;
+    margin: 40px 20px ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 20%;
+    
+}
+.order{
+    padding: 80px;
+}
+
+
+</style>
+<body><header>
+    <a href="file:///C:/Users/AS/OneDrive/Desktop/pizza/index.html"><img src="image/logo.png"></a></header>
+    <section>
+<div id="login">
+        <h1>login</h1> <br> 
+   <form class="log">
+   <label for="mobile no">Mobile no</label><br>
+   <input type="tel" placeholder="Enter your mobile no." name="mobile no" required><br>
+   <label for="pass">Password</label><br>
+   <input type="password" placeholder="Enter password" required><br><br>
+   <label><input type="checkbox" name="remember"> Remember me </label><br>
+   <button onclick="login">login</button>
+   <button type="reset" onclick="reset">Reset</button>
+   </form>
+ </div>
+
+       
+ <div id="signup">
+        <h1>sign up</h1><br>
+        <form class="signup">
+            <label for="fname">FirstName</label><br>
+            <input type="text" name="fname" placeholder="Enter FirstName"><br>
+            <label for="lname">LastName</label><br>
+            <input type="text" name="lname" placeholder="Enter LastName"><br>
+            <label for="mobile no">Mobile no</label><br>
+            <input type="tel" placeholder="Enter your mobile no." name="mobile no" required><br>
+            <label for="Email">Email</label><br>
+            <input type="email" placeholder="Enter Email" name="email" required><br>
+            <label for="pass">Password</label><br>
+            <input type="password" placeholder="Enter password" required><br><br>
+            <label><input type="checkbox" name="Comfirm"> Comfirm</label><br>
+            <button type="button" onclick="signup">signup</button>
+            <button type="reset" onclick="reset">Reset</button>
+         </form>
+       </div>
+    </section>
+<div class="order">
+    <h1>Online Order</h1>
+    <p><b>Order your favourite Pizza by clicking on the link below:</b></p>
+    <button type="button" onclick="submit">Delivery</button>
+    <button type="button" onclick="submit">Take Away</button>
+    </div>
+   
+</body>
+</html>
